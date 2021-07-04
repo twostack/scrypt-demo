@@ -1,0 +1,13 @@
+
+contract TwostackDemo {
+    int y;
+
+    constructor ( int y){
+        this.y = y;
+    }
+
+    public function lockSomeFunds(int x){
+        require(x == this.y);
+    }
+
+}
